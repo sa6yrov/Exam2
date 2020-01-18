@@ -12,13 +12,13 @@ public class Main {
 
         //Add news
         DbNews dbNews = new DbNews();
-        dbNews.addNews(news1);
-        dbNews.addNews(news2);
+//        dbNews.addNews(news1);
+//        dbNews.addNews(news2);
 
        //Show news
-//        System.out.println("Enter 1 or 2 for show news");
-//        Integer id = scn.nextInt();
-//        dbNews.showNews(id);
+        System.out.println("Enter 1 or 2 for show news");
+        Integer id = scn.nextInt();
+        dbNews.showNews(id);
 
         //Delete news
 //        dbNews.deleteNews(news1);

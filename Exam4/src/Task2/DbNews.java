@@ -68,6 +68,7 @@ public class DbNews {
                 try (ResultSet rs = pstmt.executeQuery()) {
                     rs.next();
                     news = new News(
+                            rs.getInt("id"),
                             rs.getString("title"),
                             rs.getString("text_of_news")
                     );
