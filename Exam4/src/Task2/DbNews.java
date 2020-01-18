@@ -60,7 +60,7 @@ public class DbNews {
 
     public News getNews(Integer id) {
         if (checkById(id) == true) {
-            String SQL = "select  title, text_of_news from news where id = ?";
+            String SQL = "select id,  title, text_of_news from news where id = ?";
             News news = null;
             try (Connection conn = DbConnection.connect();
                  PreparedStatement pstmt = conn.prepareStatement(SQL)) {
